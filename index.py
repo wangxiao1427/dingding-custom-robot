@@ -37,9 +37,9 @@ def merge_request_to(svc):
         "markdown": {
             "title":"又有大佬合并代码啦",
             "text": "#### 又有大佬合并代码啦,{} 快去合并 \n".format(at_any_person) +
-                    "microservice.{}".format(svc) +
+                    svc +
                     "> ![screenshot](http://shawn-resource-test.oss-cn-hongkong.aliyuncs.com/heihei%20-%20%E5%89%AF%E6%9C%AC.jpg)\n"  +
-                    "> ###### [Open Repostory](http://{}/ifaios/microservice.{}/merge_requests) \n".format(request.remote_addr, svc)
+                    "> ###### [Open Repostory](http://192.168.70.8/ifaios/{}/merge_requests) \n".format(svc)
         },
         "at": {
             "isAtAll": not bool(tels),
